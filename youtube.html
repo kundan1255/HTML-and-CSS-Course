@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Youtube Clone</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="/styles/video.css">
   <link rel="stylesheet" href="/styles/header.css">
   <link rel="stylesheet" href="/styles/general.css">
+  <link rel="stylesheet" href="/styles/sidebar.css">
 </head>
 
 <body>
@@ -21,16 +23,36 @@
     </div>
     <div class="middle-section">
       <input class="search-bar" type="text" placeholder="Search">
-      <button class="search-button"><img class="search-icon" src="/search.svg"></button>
-      <button class="voice-search-button"><img src="/voice-search-icon.svg"></button>
+      <button class="search-button"><img class="search-icon" src="/search.svg">
+      <div class="tooltip">Search</div></button>
+      <button class="voice-search-button"><img class="voice-search-icon" src="/voice-search-icon.svg">
+      <div class="tooltip">Your Voice</div></button></button>
     </div>
-    <div class="right-section"> Right Section</div>
-    
+    <div class="right-section">
+      <img class="upload-icon" src="/upload.svg">
+      <img class="youtube-apps-icon" src="/youtube-apps.svg">
+      <div class="notifications-icon-container">
+      <img class="notifications-icon" src="/notifications.svg">
+      <div class="notifications-count">3</div>
+      </div>
+      <img class="current-user-picture" src="/my-channel.jpeg"></img>
+    </div>
 
+
+  </div>
+  <div class="sidebar">
+    <div class="sidebar-link"><img src="/IconsSidebar/home.svg"><div>Home</div></div>
+    <div class="sidebar-link"><img src="/IconsSidebar/explore.svg"><div>Explore</div></div>
+    <div class="sidebar-link"><img src="/IconsSidebar/subscriptions.svg"><div>subscriptions</div></div>
+    <div class="sidebar-link"><img src="/IconsSidebar/originals.svg"><div>originals</div></div>
+    <div class="sidebar-link"><img src="/IconsSidebar/youtube-music.svg"><div>Youtube Music</div></div>
+    <div class="sidebar-link"><img src="/IconsSidebar/library.svg"><div>Library</div></div>
   </div>
   <div class="video-grid">
     <div class="video-preview">
-      <div class="thumbnail-row"><img class="thumbnail" src="/thumbnails/Motivation.png"></div>
+      <div class="thumbnail-row"><img class="thumbnail" src="/thumbnails/Motivation.png">
+        <div class="video-time">14:20</div>
+      </div>
       <div class="video-info-grid">
         <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-1.jpeg"></div>
         <div class="video-info">
@@ -45,7 +67,7 @@
 
     </div>
     <div class="video-preview">
-      <div class="thumbnail-row"><img class="thumbnail" src="/thumbnails/image.png"></div>
+      <div class="thumbnail-row"><img class="thumbnail" src="/thumbnails/image.png"> <div class="video-time">14:20</div></div>
       <div class="video-info-grid">
         <div class="channel-picture"><img class="profile-picture" src="channel-pictures/channel-1.jpeg"></div>
         <div class="video-info">

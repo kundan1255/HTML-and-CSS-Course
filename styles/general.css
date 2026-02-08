@@ -5,5 +5,9 @@ p {
 }
 
 body {
-  margin: 0px 0px 0px 0px;
+  margin: 0px;
+  padding-top: 80px;
+  padding-left: 90px;
+  padding-right: 24px;
+  background-color: rgb(246, 241, 241);
 }
